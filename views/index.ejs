@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('imports'); -%>
+  </head>
+  <body>
+    <%- include('navbar'); -%>
+    
+
+
+    <!-- POSTS -->
+
+    <div class="conatiner">
+      <div class="row justify-content-center">
+        <div class="banner_posts">
+            <h1>Principais Postagens</h1>
+        </div>
+      </div>
+    </div>
+    
+
+    <div class="container-fluid text-center heading">
+      <div class="row justify-content-md-center posts">
+          <% posts.slice(0, 3).forEach((post) => { %> 
+            <%- include('post_card', { post: post }); -%>
+          <% }); %>
+      </div>
+    </div>
+    
+
+    <!-- PROJETOS -->
+
+    <div class="conatiner">
+      <div class="row justify-content-center">
+        <div class="banner_posts">
+          <h1>Principais Projetos</h1>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-md-center">
+        <% projects.slice(0, 3).forEach((project) => { %> 
+          <%- include('project_card', { project: project }); -%>
+        <% }); %>
+    </div>
+    
+    <%- include('footer'); -%>
+    
+  </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('imports'); -%>
+  </head>
+  <body>
+    <%- include('navbar'); -%>
+    
+
+        <div class="container">
+          <div class="row justify-content-center">
+            <% executives.forEach((executive) => { %>
+              <%- include('executive_card', { executive: executive }); -%>
+            <% }); %>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+
+    <%- include('footer'); -%>
+    
+  </body>
+</html>

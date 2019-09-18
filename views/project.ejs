@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <%- include('imports'); -%>
+  </head>
+  <body>
+    <%- include('navbar'); -%>
+ 
+    
+    <div class="container">
+      <div class="row justify-content-md-center">
+          <% projects.forEach((project) => { %>
+            <%- include('project_card', { project: project }); -%>
+          <% }); %>
+      </div>
+    </div>
+    
+
+  </div>
+</div>
+
+
+<%- include('footer'); -%>
+
+  </body>
+</html>

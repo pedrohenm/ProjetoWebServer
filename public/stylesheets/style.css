@@ -1,0 +1,59 @@
+body{
+    background-color:rgba(236, 236, 236, 0.651);
+    }
+
+.projects-detail h1 {
+    color: red;
+}
+
+.card{
+
+    margin-top: 2em;
+    margin-bottom: 2em;
+    margin-right: 4em;
+    
+
+}
+
+.posts{
+    background-color: #3B332A;
+}
+
+.banner_posts {
+    width: 100%;
+    background-color: rgba(42, 54, 59);
+}
+
+.banner_posts h1 {
+    padding-bottom: 2em;
+    padding-top: 2em;
+    font-size: 5em;
+    color: #fff;
+    text-align: center;
+}
+
+
+.executive-card p {
+    font-size: 1.5rem;
+    text-decoration: underline;
+}
+
+.executive-card h5 {
+    font-size: 2rem;
+    text-decoration: bold;
+}
+
+
+footer{
+ 
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background-color: #C5CFC6;
+}
+
+footer h2{
+    font-size: 1rem;
+}
